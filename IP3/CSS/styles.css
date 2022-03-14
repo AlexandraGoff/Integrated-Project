@@ -51,3 +51,46 @@ button {
 button:hover {
   background-color: rgba(182, 182, 182, 0.8);
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+
+  align-items: center;
+  background-color: white;
+  width: 400px;
+  border-radius: 30px;
+  justify-content: center;
+}
+
+.search {
+  gap: 20px;
+  align-self: center;
+  border-radius: 18px;
+  padding: 20px;
+  margin-top: 0%;
+}
+
+.searchIcon {
+  border: none;
+  align-self: flex-end;
+  margin: 0%;
+}
+
+.description {
+  text-transform: capitalize;
+}
+
+.weather.loading {
+  visibility: hidden;
+}
+
+.weather.loading::after {
+  visibility: visible;
+  content: "Loading...";
+  justify-content: center;
+  align-items: center;
+}
+
