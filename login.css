@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: blue;
+}
+
+label{
+    background-color: white;
+}
+
+input {
+    background-color: white;
+    border-radius: 15px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  
+    align-items: center;
+    background-color: white;
+    width: 400px;
+    height: auto  ;
+    border-radius: 30px;
+    justify-content: center;
+}
+
+.FP{
+    text-decoration: underline;
+    background-color: white;
+    color:black;
+}
+
+.FP:hover{
+    color: cadetblue;
+    
+}
+
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+  }
+  
+  .nav_links {
+    list-style: none;
+    
+  }
+  
+  .nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+    color: white;
+   
+  }
+  
+  .nav_links li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: white;
+    padding: 0 15px ;
+  }
+  .nav_links li a:hover {
+    color: black;
+  }
+  
+  
+  button:hover {
+    background-color: rgba(182, 182, 182, 0.8)}
+
+.loginbtn {
+  font-family: "Monstserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 11px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: black;
+  background-color: burlywood;
+
+}
+
+.signupbtn {
+
+  font-family: "Monstserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 9px 20px;
+  border: none;
+  border-radius: 45px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: black;
+  background-color: burlywood;
+
+}
+.logo{
+  background-color: white;
+}
