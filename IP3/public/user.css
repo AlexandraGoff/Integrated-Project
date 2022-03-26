@@ -3,12 +3,50 @@
     padding: 0;
     box-sizing: border-box;
     /*border: 2px solid black;*/
-    font-family: 'Encode Sans Expanded', sans-serif;
+    font-family: 'Roboto', sans-serif;
     
 }
 
+.password-div h4{
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
 
+table{
 
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    overflow: scroll;
+    height: 250px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    
+}
+
+table th {
+    
+    text-align: left;
+    font-size: 13px;
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
+}
+table td {
+    
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+    padding-right: 3rem;
+    font-size: 13px;
+    
+}
+
+p{
+    font-size: 13px;
+    color: #717274;
+    margin-top: 1rem;
+
+}
 #profile-header{
     color: #242E4C;
     font-size: 1.5rem;
@@ -28,7 +66,6 @@ nav {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 23px;
-    color: white;
     
 }
 
@@ -64,20 +101,46 @@ body{
         rgb(236, 236, 236, 0.9),
         rgba(255,255,255,1)
         );*/
-    background-color:white;
+    background-color:#d7d8dd;
 }
 
-h2,
-p{
-    font-weight: 500;
-    font-size: 18px;
-    color: #CCD2E8;
-    opacity: 0.8;
+
+
+h1{
+    font-size: 17px;
+    padding-left: 1rem;
 }
 
-h3{
+h2{
     font-weight: 500;
-    color: #1C3A74;
+    font-size: 13px;
+    color: #717274;
+    
+}
+
+h4{
+    font-weight: 500;
+    font-size: 13px;
+    color: #333333;
+}
+
+.users-email{
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #e9eaec;
+}
+
+h3 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #717274;
+    
 }
 .user-icon{
     width: 25px;
@@ -98,72 +161,113 @@ h3{
     border-radius: 1rem;
     display: flex;
     font-family: 'Encode Sans Expanded', sans-serif;
-    background: linear-gradient(
-       to right bottom,rgba(255,255,255,0.2),
-       rgba(255,255,255,0.3)
-       );
 }
 
-.link img {
-    width: 25px;
-    height: 25px;
-}
-.user img{
-    width: 80px;
-    height: 80px;
-    margin-bottom: 10px;
+
+.link img,
+#log-out-link img {
+    width: 15px;
+    height: 15px;
 }
 
 .dashboard{
-    flex: 1;
+    flex: 1 30%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
-    border-radius: 1rem;
+    align-items: left;
+    text-align: left;
+    background-color: #f3f4f6;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     /*background: linear-gradient(
         to right bottom,rgba(255,255,255,0.7),
         rgba(255,255,255,0.3)
         );
     */
-    border: 2px solid #ebebf2;
+    border: 1px solid #d7d8dd;
 }
 
 #info_div {
-    flex: 2;
+    flex: 1 70%;
+    background-color: #ffffff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid #d7d8dd;
+    border-top: 1px solid #d7d8dd;
+    border-right: 1px solid #d7d8dd;;
+    border-bottom: 1px solid #d7d8dd;;
 
 }
+
+#header-settings{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #d7d8dd;
+    
+}
+
 
 .link {
     display: flex;
-    margin: 2rem 0rem;
-    padding: 1rem 5rem;
     align-items: center;
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    border-left: 2px solid transparent;
 }
 
+.link:hover{
+    background-color: #e9eaec;
+    /*border-radius: 7px;*/
+    cursor: pointer;
+    border-left: 2px solid #717274;
+}
 .link h2 {
-    padding: 0rem 2rem;
+    padding-left: 1.5rem;
 }
 
-.pro img {
-    width: 100px;
+.link h2:hover{
+    color: black;
 }
 
 
-
-
-
-#profile {
+#log-out-link{
+    display: flex;
     align-items: center;
-    height: 100px;
-    width: 100px;
-    margin-right: 50px;
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    border-left: 2px solid transparent;
+    margin-top: 2rem;
+}
 
+#log-out-link h2{
+    padding-left: 1.5rem;
+    
+}
+
+#log-out-link:hover{
+    background-color: #e9eaec;
+    /*border-radius: 7px;*/
+    cursor: pointer;
+    border-left: 2px solid #717274;
+    
+}
+
+#log-out-link h2:hover{
+    color: black;
+}
+
+a {
+    text-decoration: none;
 }
 
 .line_div{
-    padding-bottom: 20px;
+    padding-bottom: 0.1rem;
+    padding-top: 1rem;
+    display: flex;
+}
+
+.underline {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #d7d8dd;
+    margin-left: 1rem;
 }
 
 #e-mail{
@@ -177,39 +281,41 @@ h3{
 }
 
 .input_box{
-    margin-left: 30px;
-    width: 200px;
-    height: 25px;
-    border-radius: 4px;
+    margin-top: 0.5rem;
+    width: 210px;
+    height: 20px;
     outline: none;
     border: none;
-    font-size: 1rem;
-    border-bottom: 2px solid #ebebf2;
-    background-color: transparent;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #f3f4f6;
+
     
 }
 .e-mail_btn{
-    margin-left: 118px;
-    width: 130px;
-    height: 30px;
-    border-radius: 4px;
-    background-color: #F9423D;
+    margin-left: 100px;
+    width: 150px;
+    height: 25px;
+    border-radius: 2px;
+    background-color: #337AF1;
     outline: none;
     border: none;
     color: #fff;
-    font-size: 15px;
+    font-size: 13px;
+    margin-top: 1rem;
 }
 
 .e-mail_btn:hover{
-    background-color: #337AF1;
+    background-color: #5CC4DC;
     transition: all 0.4s ease-out;
+    cursor: pointer;
 }
 
 /*FOOTER SECTION*/
 
 .footer-container{
     background-color: #252934;
-    padding: 4rem 0 4rem 0;
+    padding: 2rem 0 2rem 0;
     margin-top: 50px;
 }
 
@@ -305,7 +411,7 @@ h3{
 .burger div{
     width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: white;
     margin: 5px;
     transition: all 0.3s ease;
 }
