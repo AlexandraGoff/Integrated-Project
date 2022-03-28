@@ -271,13 +271,11 @@ a {
 }
 
 #e-mail{
-    padding-left: 28px;
-    margin-left: 30px;
+    margin-left: 1rem;
 }
 
 #username{
-    padding-left: 8px;
-    margin-left: 30px;
+    margin-left: 1rem;
 }
 
 .input_box{
@@ -293,7 +291,6 @@ a {
     
 }
 .e-mail_btn{
-    margin-left: 100px;
     width: 150px;
     height: 25px;
     border-radius: 2px;
