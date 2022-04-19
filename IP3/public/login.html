@@ -37,14 +37,14 @@
                 <div class="form login">
                   <span class="title">Login</span>
 
-                  <form action="#">
+                  <form action="/auth" method="post">
                     <div class="input-field">
-                      <input type="text" placeholder="Enter your username..." required>
+                      <input type="text" name="username" id="username" placeholder="Enter your username..." required>
                       
                     </div>
 
                     <div class="input-field">
-                      <input type="password" placeholder="Enter your password..." required>
+                      <input type="password" name="password" id="password" placeholder="Enter your password..." required>
                       
                     </div>
 
@@ -58,7 +58,7 @@
                     </div>
       
                     <div class="login-button">
-                      <input type="button" value="Login Now" class="login-btn">
+                      <input type="submit" value="Login Now" class="login-btn">
                     </div>
 
                     <div class="register">
@@ -107,6 +107,8 @@
   </div>
   
       <script src="./scriptNav.js"></script>
+      <script src="..\Javascript\login.js"></script>
+      <script src="../index.js"></script>
 
   </body>
 </html>
