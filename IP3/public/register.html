@@ -37,25 +37,25 @@
                 <div class="form login">
                   <span class="title">Register</span>
                 
-                  <form action="#">
+                  <form action="/reg" method="post">
                     <div class="input-field">
-                      <input type="text" placeholder="Enter your username..." required>
+                      <input type="text" id="username" name="username" placeholder="Enter your username..." required>
                       
                     </div>
 
-                    <form action="#">
+                    
                         <div class="input-field">
-                          <input type="text" placeholder="Enter your e-mail..." required>
+                          <input type="text" name="email" id="email" placeholder="Enter your e-mail..." required>
                           
                         </div>
 
                     <div class="input-field">
-                      <input type="password" placeholder="Enter your password..." required>
+                      <input type="password" name="password" id="password" placeholder="Enter your password..." required>
                       
                     </div>
       
                     <div class="login-button">
-                      <input type="button" value="Register Now" class="login-btn">
+                      <input type="submit" value="Register Now" class="login-btn">
                     </div>
 
                     <div class="register">
