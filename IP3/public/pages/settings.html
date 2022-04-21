@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
-    <link rel="stylesheet" href="./user.css" />
+    <link rel="stylesheet" href="../css/user.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <div class="logo">
-            <h4 style="color: white;">Website Name</h4>
+        <div class="logo" style="color: white;">
+            <h4>Website Name</h4>
         </div>
         <ul class="nav-links">
-            <li><a href="./index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="./weather.html">Weather</a></li>
             <li><a href="./planes.html">Planes</a></li>
             <li><a href="./about.html">About</a></li>
@@ -41,34 +41,30 @@
                 
                 <div class="links">
                     <div class="link">
-                        <img src="./user-grey.svg" alt="">
-                        <a href="./user.html"><h2>Account Details</h2></a>
+                        <img src="../images/user-grey.svg" alt="">
+                        <a href="./user.html"><p class="menu-p">Personal Details</p></a>
+                    </div>
+
+
+                    <div class="link">
+                        <img src="../images/user-lock-grey.svg" alt="">
+                        <a href="./password.html"><p class="menu-p">Password</p></a>
                     </div>
 
                     <div class="link">
-                        <img src="./gears-grey.svg" alt="">
-                        <a href="./settings.html"><h2>Profile Settings<h2></a>
+                        <img src="../images/user-plane-grey.svg" alt="">
+                        <a href="./history.html"><p class="menu-p">Flight History</p></a>
                     </div>
 
                     <div class="link">
-                        <img src="./user-lock-grey.svg" alt="">
-                        <a href="./password.html"><h2>Password</h2></a>
-                    </div>
-
-                    <div class="link">
-                        <img src="./user-plane-grey.svg" alt="">
-                        <a href="./history.html"><h2>Flight History</h2></a>
-                    </div>
-
-                    <div class="link">
-                        <img src="./delete-user.svg" alt="">
-                        <a href="./delete-account.html"><h2>Delete Account</h2></a>
+                        <img src="../images/delete-user.svg" alt="">
+                        <a href="./delete-account.html"><p class="menu-p">Delete Account</p></a>
                     </div>
                     
 
                     <div id="log-out-link">
-                        <img src="./log-out.svg" alt="">
-                        <a href="#"><h2>Log Out</h2></a>
+                        <img src="../images/log-out.svg" alt="">
+                        <a href="#"><p class="menu-p">Log Out</p></a>
                     </div>
                     
                 </div>
@@ -83,26 +79,31 @@
 
         <div id="info_div">
             <div id="header-settings">
-                <h1>Reset Your Password</h1>
+                <h1>Personal Details</h1>
             </div>
             <div class="underline">
-                <div class="password-div">
-                    <p style="width: 500px;">Your new password must be different from previous passwords, be longer than 7 characters and contain one special symbol.
-                    </p>
-                    <h4 style="font-weight: bold;">Old Password :</h4>
-                    <input type="password" class="input_box" style="margin: 0;">
-                </div>
-                <div class="password-div">
-                    <h4 style="font-weight: bold;">New Password :</h4>
-                    <input type="password" class="input_box" style="margin: 0;">
-                </div>
-
-                <div class="password-div">
-                    <h4 style="font-weight: bold;">Confirm New Password :</h4>
-                    <input type="password" class="input_box" style="margin: 0;">
+                <div class="line_div">
+                    <h4>Username :</h4>
+                    <h4 id="username">JennyJen31</h4>
                 </div>
             </div>
-                <input type="button" style="margin-top: 1rem; margin-left: 1rem;" value="Change Password" class="e-mail_btn">
+            <div class="underline">
+                <div class="line_div">
+                    <h4>First Name :</h4>
+                    <input type="text" placeholder="First name.." class="input_box">
+                </div>
+                <div class="line_div">
+                    <h4>Last Name :</h4>
+                    <input type="text" placeholder="Last name..." class="input_box">
+                </div>
+            </div>
+            <div class="underline">
+                <div class="line_div">
+                    <h4>E-mail :</h4>
+                    <h4 id="e-mail">jennyaiko@gmail.com</h4>
+                </div>
+                <input type="button" value="Change E-mail" class="e-mail_btn">
+            </div>
         </div>
     </div>
 

@@ -42,11 +42,20 @@ table td {
 }
 
 p{
-    font-size: 13px;
+    font-size: 14px;
     color: #717274;
     margin-top: 1rem;
 
 }
+
+.menu-p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #717274;
+    margin-top: 0rem;
+    margin-left: 1rem;
+}
+
 #profile-header{
     color: #242E4C;
     font-size: 1.5rem;
@@ -65,7 +74,9 @@ nav {
 .logo {
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 23px;
+    font-size: 18px;
+    color: white;
+    margin-left: 12rem;
     
 }
 
@@ -84,14 +95,22 @@ h1{
 
 h2{
     font-weight: 500;
-    font-size: 13px;
+    font-size: 20px;
+    color: #fff;
+    
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 500;
     color: #717274;
+    margin-right: 1.5rem;
     
 }
 
 h4{
     font-weight: 500;
-    font-size: 13px;
+    font-size: 15px;
     color: #333333;
 }
 
@@ -107,12 +126,7 @@ h4{
     background-color: #e9eaec;
 }
 
-h3 {
-    font-size: 13px;
-    font-weight: 500;
-    color: #717274;
-    
-}
+
 .user-icon{
     width: 25px;
 }
@@ -126,11 +140,13 @@ h3 {
 
 #wrapper-container{
     background: white;
-    min-height: 50vh;
-    width: 60%;
+    min-height: 42vh;
+    width: 50%;
     margin: 0 auto;
     border-radius: 1rem;
     display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -246,8 +262,8 @@ a {
 
 .input_box{
     margin-top: 0.5rem;
-    width: 210px;
-    height: 20px;
+    width: 200px;
+    height: 24px;
     outline: none;
     border: none;
     font-size: 13px;
@@ -257,14 +273,14 @@ a {
     
 }
 .e-mail_btn{
-    width: 150px;
-    height: 25px;
+    width: 200px;
+    height: 30px;
     border-radius: 2px;
     background-color: #337AF1;
     outline: none;
     border: none;
     color: #fff;
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 1rem;
 }
 
@@ -336,7 +352,7 @@ a {
     width: 100px;
     height: 40px;
     border-radius: 4px;
-    background-color: #5CC4DC;
+    background-color: #337AF1;
     outline: none;
     border: none;
     color: #fff;
@@ -344,16 +360,16 @@ a {
 }
 
 #footer-email-btn:hover{
-    background-color: #337AF1;
+    background-color: #5CC4DC;
     transition: all 0.4s ease-out;
 }
-
 
 
 .nav-links{
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    width: 25%;
+    margin-right: 12rem;
 }
 .nav-links li{
     list-style: none;
@@ -362,7 +378,8 @@ a {
     color: #fff;
     text-decoration: none;
     letter-spacing: 3px;
-    font-size: 14px;
+    font-size: 15px;
+    
    
 }
 
@@ -450,7 +467,7 @@ a {
 }
 
 .toggle .line1{
-    transform: rotate(-45deg)translate(-5px,6px);
+    transform: rotate(-45deg) translate(-5px,6px);
 }
 .toggle .line2{
     opacity: 0;
