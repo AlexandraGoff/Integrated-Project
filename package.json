@@ -1,29 +1,20 @@
 {
-  "name": "integrated-project",
+  "name": "session",
   "version": "1.0.0",
-  "description": "The shared repository for the Integrated Project.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "node.js",
-    "express"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlexandraGoffova/Integrated-Project.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AlexandraGoffova/Integrated-Project/issues"
-  },
-  "homepage": "https://github.com/AlexandraGoffova/Integrated-Project#readme",
+  "description": "",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.1.1",
+    "connect-ensure-login": "^0.1.1",
     "express": "^4.17.3",
-    "nodemon": "^1.11.1",
-    "path": "^0.12.7"
+    "express-session": "^1.17.2",
+    "mongoose": "^6.3.0",
+    "mysql": "^2.18.1",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0"
   }
 }
