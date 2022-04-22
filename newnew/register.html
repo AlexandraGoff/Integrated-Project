@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Log In</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+            <h4 style="color: white;">Website Name</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./weather.html">Weather</a></li>
+            <li><a href="./planes.html">Planes</a></li>
+            <li><a href="./about.html">About</a></li>
+        </ul>
+        <div class = "burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <!-- Labels for username and password -->
+      <div class="login-container">
+            <div class="forms">
+                <div class="form login">
+                  <span class="title">Register</span>
+                
+                  <form action="/reg" method="post">
+                    <div class="input-field">
+                      <input type="text" id="username" name="username" placeholder="Enter your username..." required>
+                      
+                    </div>
+
+                    
+                        <div class="input-field">
+                          <input type="text" name="email" id="email" placeholder="Enter your e-mail..." required>
+                          
+                        </div>
+
+                    <div class="input-field">
+                      <input type="password" name="password" id="password" placeholder="Enter your password..." required>
+                      
+                    </div>                    <div class="login-button">
+                      <input type="submit" value="Register Now" class="login-btn">
+                    </div>
+
+                    <div class="register">
+                      <span class="text">Already a member?
+                         <a href="./login.html" class="text signup-text">Login Now</a>
+                      </span>
+                    </div>
+                  </form>
+                </div>
+            </div>
+        
+      </div>
+    </main>
+
+
+    <div class="footer-container">
+      <div class="footer">
+          <div class="footer-heading footer-1">
+              <h2>About Us</h2>
+              <a href="#">Blog</a>
+              <a href="#">Demo</a>
+              <a href="#">Customers</a>
+              <a href="#">Investors</a>
+              <a href="#">Terms of Service</a>
+          </div>
+          <div class="footer-heading footer-2">
+              <h2>Contact Us</h2>
+              <a href="#">Jobs</a>
+              <a href="#">Support</a>
+              <a href="#">Contact</a>
+              <a href="#">Sponsorships</a>
+          </div>
+          <div class="footer-heading footer-3">
+              <h2>Social Media</h2>
+              <a href="#">Instagram</a>
+              <a href="#">Facebook</a>
+              <a href="#">Youtube</a>
+              <a href="#">Twitter</a>
+          </div>
+          <div class="footer-email-form">
+              <h2>Join our newsletter</h2>
+              <input type="email" placeholder="Enter your email address" id="footer-email">
+              <input type="submit" value="Sign Up" id="footer-email-btn">
+          </div>
+      </div>
+  </div>
+  
+      <script src="./scriptNav.js"></script>
+
+  </body>
+</html>
