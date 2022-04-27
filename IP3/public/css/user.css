@@ -456,6 +456,10 @@ ul li {
 }
 
 @media (max-width: 35em) {
+
+    .logo{
+        margin-left: 1rem;
+    }
     .nav-links{
         position: fixed;
         inset: 0 0 0 30%;
@@ -466,8 +470,6 @@ ul li {
         background-color: #1f3150;
 
         transform: translate(100%);
-
-        --gap : 2em;
     }
 
     .nav-links[data-visible="true"]{
@@ -530,11 +532,18 @@ ul li {
     margin-top: 4rem;
 }
 
+.logo{
+    margin-left: 1rem;
+}
+
 }
 
 
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 800px){
+    .logo{
+        margin-left: 1rem;
+    }
     body {
      overflow-x: hidden;
     }
@@ -553,8 +562,8 @@ ul li {
         background-color: #1f3150;
 
         transform: translate(100%);
+        gap: var(--gap, 0rem);
 
-        --gap : 2em;
     }
 
 
