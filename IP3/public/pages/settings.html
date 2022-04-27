@@ -8,24 +8,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="../scripts/scriptNav.js" defer></script>
 </head>
 <body>
+    <header class="primary-header">
+        <div class="logo">
+            Caledonian Air
+        </div>
+        
+            <div class = "burger" btn-active = "false">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
     <nav>
-        <div class="logo" style="color: white;">
-            <h4>Website Name</h4>
-        </div>
-        <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./weather.html">Weather</a></li>
-            <li><a href="./planes.html">Planes</a></li>
-            <li><a href="./about.html">About</a></li>
-        </ul>
-        <div class = "burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
+    <ul class="nav-links" data-visible= "false">
+        <li class="active"><a href="../index.html">Home</a></li>
+        <li><a href="./weather.html">Weather</a></li>
+        <li><a href="./planes.html">Planes</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li class="slide"></li>
+    </ul>
+</nav>
+</header>
 
     
    
@@ -76,6 +81,7 @@
 
 
             <!-- USER INFORMATION-->
+            <img class="kebab-button" hidden="false" src="../images/ellipsis-vertical.png" alt="">
 
         <div id="info_div">
             <div id="header-settings">
@@ -140,6 +146,6 @@
     </div>
 </div>
 
-    <script src="./scriptNav.js"></script>
+    <script src="../scripts/scriptOptions.js" defer></script>  
 </body>
 </html>
