@@ -522,9 +522,7 @@ ul li {
 
 @media screen and (max-width:1000px){
 
-.logo {
-    background-color: red;
-}
+
 .footer {
     height: 50vh;
 }
