@@ -3,7 +3,7 @@
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
-    
+    const navA = document.querySelectorAll('.nav-links li a');
 
     burger.addEventListener('click', () => {
         const visibility = nav.getAttribute("data-visible");
@@ -30,3 +30,11 @@
       
     
     });
+
+    function underline() {
+        const underlined = navA.getAttribute("underlined");
+
+        if (underlined === "false"){
+            navA.setAttribute('underlined', true);
+        }
+    }

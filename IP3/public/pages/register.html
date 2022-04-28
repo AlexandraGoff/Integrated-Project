@@ -11,24 +11,29 @@
     <title>Log In</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">
-            <h4 style="color: white;">Caledonian Air</h4>
-        </div>
-        <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./weather.html">Weather</a></li>
-            <li><a href="./planes.html">Planes</a></li>
-            <li><a href="./about.html">About</a></li>
-        </ul>
-        <div class = "burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
-    </header>
+    <header class="primary-header">
+            
+      <div class="logo">
+          <img class ="logo-img" src="../images/logo-tornado.png">
+          <p>Caledonian Air</p>
+      </div>
+      
+          <div class = "burger" btn-active = "false">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+          </div>
+  <nav>
+  <ul class="nav-links" data-visible= "false">
+      <li class="active"><a href="../index.html">Home</a></li>
+      <li><a href="./weather.html">Weather</a></li>
+      <li><a href="./planes.html">Planes</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><button class="login-btn-nav" onclick="window.location.href='./login.html'">Log In</button></li>
+      <li class="slide"></li>
+  </ul>
+</nav>
+</header>
 
     <main>
         <!-- Labels for username and password -->
